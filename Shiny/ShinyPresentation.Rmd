@@ -38,7 +38,7 @@ The basic idea is that the carnival employee tries to guess your weight after as
 
 **I could not get the shiny code to run in this presentation at all. Please check out my running shiny server.**
 
-Shiny Server:
+Shiny Server: http://shawnlunny.shinyapps.io/Shiny/
 
 Files: http://github.com/shawnlunny/Developing-Data-Products/
 
