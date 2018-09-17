@@ -1,4 +1,7 @@
 library(shiny)
+library(shinyjs)
+library(dplyr)
+data("women")
 
 shinyUI(fluidPage(
   useShinyjs(),
