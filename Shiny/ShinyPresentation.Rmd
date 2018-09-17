@@ -36,16 +36,24 @@ I decided to mimic a popular carnival game using the women data set.
 
 The basic idea is that the carnival employee tries to guess your weight after asking your height. You win a prize if they guess your weight incorrectly.
 
-Repo: http://github.com/shawnlunny/Developing-Data-Products/
+**I could not get the shiny code to run in this presentation at all. Please check out my running shiny server.**
 
-Shiny App runs on final slide of this presentation. May need to load into browser to get proper sizing.
+Shiny Server:
 
-## Part 1 - Guessing the Weight based on Height
+Files: http://github.com/shawnlunny/Developing-Data-Products/
+
+## About the App
+
+**Part 1 - Guessing the Weight based on Height**
 
 The app has two panels. The sidebar panel is where the carnival employee would enter the height of the player, or use the arrows to select the correct height.
 
 *Subtle enhancements: The size of the data point and text increases or decreases with the weight.*
 
-## Part 2 - Making the model more accurate
+**Part 2 - Making the model more accurate**
 
 Since the original dataset is small and uses averages, from an unknown year it may not really represent the current US population. Thus, I added a way for the carnival employee to add new data points in the well pane. Over time the dataset will move towards the average and the 'houses' odds of winning will increase.
+
+## Special Consideration
+
+My shiny application maintains state, and therefore graders adding rogue data points may skew data. I would need to restart my application to reset all the data.
