@@ -30,7 +30,7 @@ I decided to mimic a popular carnival game using the women data set.
 
 The basic idea is that the carnival employee tries to guess your weight after asking your height. You win a prize if they guess your weight incorrectly.
 
-Repo: http://github.com/shawnlunny/Developing-Data-Products
+Repo: http://github.com/shawnlunny/Developing-Data-Products/
 
 Part 1 - Guessing the Weight based on Height
 ========================================================
@@ -43,3 +43,14 @@ Part 2 - Making the model more accurate
 ========================================================
 
 Since the original dataset is small and uses averages, from an unknown year it may not really represent the current US population. Thus, I added a way for the carnival employee to add new data points in the well pane. Over time the dataset will move towards the average and the 'houses' odds of winning will increase.
+
+```{r, echo = FALSE}
+
+library(shiny)
+
+shinyAppDir(
+  system.file(getwd(), package="shiny"),
+  options = list(width = "100%", height = 700)
+)
+
+```
