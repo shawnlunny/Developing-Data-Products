@@ -51,7 +51,14 @@ shinyServer(function(input, output, session) {
     #Clear message to prepare for next data point
     delay(2000, hide("status"))
     show("text")
-    
   })
   
+  output$documentation <- renderText(
+                "<h1>Documentation</h1><br>
+                <h2>This app will attempt to guess a women's weight based on her height. It is inspired by carnival games.</h2><br>
+                <ol>
+                  <li><h3>The top left panel is for the actual guessing.</h3></li>               
+                  <li><h3>The bottom left panel is for adding new data points, which are used to increase the models accuracy over time.</h3></li>
+                </ol><br>"
+  )
 })

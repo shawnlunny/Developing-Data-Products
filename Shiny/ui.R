@@ -21,10 +21,13 @@ shinyUI(fluidPage(
         actionButton("addData", "Add new data point")
       )       
     ),
-    
     mainPanel(
-      plotOutput("plot"),
-      textOutput("status")
+      tabsetPanel(type = "tabs", 
+                  tabPanel("Main",
+                  plotOutput("plot"),
+                  textOutput("status")),
+                  tabPanel("Documentation", htmlOutput("documentation"))
+                  )
     )
   )
 ))
